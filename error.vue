@@ -22,7 +22,7 @@
 /**
  * Пропсы ----------------
  */
-import { TError404 } from '~/types/base';
+import type { TError404 } from '~/types/base';
 
 /**
  * Пропсы ----------------

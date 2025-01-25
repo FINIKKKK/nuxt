@@ -1,5 +1,5 @@
-import { AsyncData } from '#app';
-import { FetchOptions } from 'ofetch';
+import type { AsyncData } from '#app';
+import type { FetchOptions } from 'ofetch';
 import { useRequestStore } from '~/stores/RequestController';
 
 /**

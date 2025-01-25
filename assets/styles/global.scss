@@ -1,3 +1,5 @@
+//@use "variables";
+
 // Tags
 html {
   overflow: hidden;
@@ -75,14 +77,14 @@ a {
   font-size: 16px !important;
   line-height: 24px !important;
   &:hover {
-    background-color: darken($yellow, 15%);
+    background-color: $yellow
   }
   &.disabled {
     pointer-events: none;
     opacity: 0.5;
   }
   &:focus {
-    background-color: darken($yellow, 15%);
+    background-color: $yellow
   }
 }
 

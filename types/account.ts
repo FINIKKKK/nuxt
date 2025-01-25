@@ -1,4 +1,4 @@
-import { TBase } from '~/types/base';
+import type { TBase } from '~/types/base';
 
 export interface TUser extends TBase {
   first_name: string;

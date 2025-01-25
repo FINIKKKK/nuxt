@@ -2,26 +2,38 @@
 export default defineNuxtConfig({
   // DevTools
   devtools: { enabled: true },
+
   // Все глобальные стили
-  css: ['@/assets/styles/style.scss'],
+  css: [
+    '~/assets/styles/reset.scss',
+    '~/assets/styles/fonts.scss',
+    '~/assets/styles/fontawesome.min.scss',
+    '~/assets/styles/global.scss',
+  ],
+
   // Дополниельные модули
   modules: ['@pinia/nuxt'],
+
   vite: {
     // Подключаем файл с переменными ко всем файлам стилей
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "~/assets/styles/assets/variables";',
+          additionalData: '@use "~/assets/styles/variables.scss" as *;',
+          api: 'modern-compiler',
         },
       },
     },
   },
+
   // SSR
   ssr: true,
+
   // Включаем TypeScript
   typescript: {
     typeCheck: true,
   },
+
   // Конфиг
   runtimeConfig: {
     public: {
@@ -29,4 +41,6 @@ export default defineNuxtConfig({
       apiUrl: '',
     },
   },
+
+  compatibilityDate: '2025-01-25',
 });

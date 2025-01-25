@@ -1,6 +1,6 @@
 import { useUserStore } from '~/stores/UserController';
 import { useCustomFetch } from '~/hooks/useCustomFetch';
-import { TUser } from '~/types/account';
+import type  { TUser } from '~/types/account';
 
 /**
  * ------------------------------------------------------------

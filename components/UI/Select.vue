@@ -39,7 +39,7 @@
 <!-- ----------------------------------------------------- -->
 
 <script lang="ts" setup>
-import { TSelect } from '~/types/base';
+import type { TSelect } from '~/types/base';
 
 /**
  * Пропсы ----------------
